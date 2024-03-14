@@ -7,14 +7,21 @@
     color: #DCF2F1;
 }
 
+/* 
+==========================================================================
+============================= Nav styles ================================
+*/
+
 .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #7FC7D9;
 }
 
 .header__nav-bar {
+    width: 100%;
     padding: 1rem 4rem;
     display: flex;
     justify-content: space-between;
@@ -56,6 +63,12 @@
     height: 25rem;
 }
 
+/* 
+==========================================================================
+********** THIS SECTION IS USED BY FAVORITES AND EXPLORE PAGE ************
+============================= Explore Section ============================
+*/
+
 .explore {
     padding: 5rem 3rem;
     background-color: #365486;
@@ -73,7 +86,18 @@
     align-items: center;
 }
 
+.explore__title {
+    display: flex;
+    align-items: center;
+}
+
+.explore__title i {
+    font-size: 24px;
+    margin-right: 1rem;
+}
+
 .explore__title h3{
+    padding: 0 1rem;
     font-family: "Nunito sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -85,6 +109,7 @@
 }
 
 .explore__search input {
+    color: #0F1035;
     padding: 0.2rem 1rem;
     border: none;
     border-radius: 0.5rem;
@@ -153,4 +178,100 @@
 .explore__page-number--number:hover {
     opacity: 1;
     transition: 0.1s ease;
+}
+
+/* 
+==========================================================================
+============================= End Explore Section ========================
+*/
+
+
+/* 
+==========================================================================
+============================ Game Detail Section =========================
+*/
+
+.header__info-frame {
+    margin: 3rem;
+    width: 75rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background-color: #DCF2F1;
+    border-radius: 2rem;
+}
+
+.header__info-section {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__game-details {
+    height: 20rem;
+    background-color: #0F1035;
+    padding: 3rem;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__game-description--vertical {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__game-description--vertical h3{
+    font-family: "Nunito sans", sans-serif;
+    padding-right: 0.5rem;
+    font-weight: 700;
+}
+
+.header__game-description--horizontal {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-color: #7FC7D9 #0F1035;
+}
+
+.header__game-description--horizontal h3{
+    font-family: "nutino sans", sans-serif;
+    padding: 0.5rem 0;
+    font-weight: 700;
+}
+
+.actions {
+    display: flex;
+}
+
+.actions__button {
+    transition: 0.3s ease;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 1.5rem;background: rgb(85,112,157);
+    background: rgb(114,138,177);
+    background: linear-gradient(180deg, rgba(114,138,177,1) 0%, rgba(45,73,120,1) 12%, rgba(54,84,134,1) 71%, rgba(43,66,105,1) 100%);
+    cursor: pointer;
+}
+
+.actions__button:hover {
+    opacity: 0.6;
+    transition: 0.3s ease;
+}
+
+.actions__button p {
+    padding-left: 0.5rem;
+    font-family: "Nunito sans", sans-serif;
+    font-weight: 900;
 }
