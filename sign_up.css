@@ -142,11 +142,13 @@ form{
    position: absolute;
    left: 20px;
    border-radius: 0.563rem;
-   height: 22px;
+   height: 26px;
    border: none;
    background-color: rgb(220,242,241);
    color: black;
    padding: 0.125rem 12.7rem;
+   
+   
 }
 
 #Submit:hover{
@@ -161,6 +163,7 @@ form{
     font-size: 0.7rem;
     right: 0;
     margin: auto;
+    margin-top: 0.3rem;
     
 
 }

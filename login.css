@@ -76,6 +76,8 @@ form {
     margin-top: 1.875rem;
     position: relative;
     height: 12.5rem; 
+   
+    
 }
 
 .form__campos {
@@ -95,7 +97,9 @@ form {
     border: none;
     background-color: rgb(220, 242, 241);
     color: black;
-    font-size: 0.875rem; 
+    font-size: 0.875rem;    
+    text-align: center;
+    
 }
 
 #form__log:hover {
